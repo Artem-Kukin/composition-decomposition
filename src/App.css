@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.news-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.news-container__news-posts {
+  display: grid;
+}
+
+.news-container__categories,
+.news-container__stock-market {
+  display: flex;
+  align-items: baseline;
+}
+
+.color-grey {
+  color: grey;
+  font-size: small;
+}
+
+.news-container__stock-market__item,
+.news-container__news-posts__item,
+.news-container__categories__item,
+.search-nav__item,
+.other-item {
+  margin: 1.5vh 0.5vw;
+  text-decoration: none;
+  color: black;
+}
+
+.advertising {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5vw;
+}
+
+.advertising__item-img,
+.search-input__img {
+  width: 100px;
+  height: 100px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3,
+h4 {
+  color: cornflowerblue;
+}
+input {
+  width: -webkit-fill-available;
+  margin: 1vw;
+}
+.search-nav {
+  display: flex;
+  padding: 1vw;
+}
+.search-input {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.baner {
+  display: flex;
+  margin: 10vh 0;
+  justify-content: center;
+}
+.baner-img {
+  height: 30vh;
+  width: 55vw;
 }
 
-.App-link {
-  color: #61dafb;
+.other-columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 2vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.other-columns__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
